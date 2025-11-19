@@ -75,7 +75,7 @@ Ele realiza:
 
 O repositório inclui:
 
-`/simulacao_wokwi/diagram.json`
+`/simulacao/serial_monitor`
 
 Para executar:
 
