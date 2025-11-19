@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "author": "Braguu",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -11.26,
+      "left": 61.3,
+      "rotate": 90,
+      "attrs": {}
+    },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": 12.8, "left": -220, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -128.4,
+      "left": 90.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -63.25,
+      "left": 134.4,
+      "attrs": { "value": "220000" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -128.4,
+      "left": -53.8,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -63.25,
+      "left": -28.8,
+      "attrs": { "value": "220000" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -128.4,
+      "left": -188.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -63.25,
+      "left": -153.6,
+      "attrs": { "value": "220000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h0" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "h28.8", "v-0.4", "h86.4" ] ],
+    [ "ldr1:AO", "esp:34", "green", [ "h19.2", "v-19.9", "h182.4" ] ],
+    [ "r1:2", "esp:26", "red", [ "h8.4", "v57.6", "h-96" ] ],
+    [ "r1:1", "led1:A", "red", [ "v0" ] ],
+    [ "led1:C", "esp:GND.1", "black", [ "h0.4", "v134.25" ] ],
+    [ "r2:1", "led2:A", "gold", [ "v0" ] ],
+    [ "r3:1", "led3:A", "green", [ "v0" ] ],
+    [ "led2:C", "esp:GND.1", "black", [ "v86.4", "h106" ] ],
+    [ "led3:C", "esp:GND.1", "black", [ "v86.4", "h240.4" ] ],
+    [ "r2:2", "esp:27", "gold", [ "h66", "v105.45" ] ],
+    [ "r3:2", "esp:25", "green", [ "h18", "v38.4", "h192" ] ]
+  ],
+  "dependencies": {}
+}
