@@ -57,7 +57,7 @@ Analisar e interpretar o nível de energia luminosa presente em um ambiente, uti
 
 ---
 
-## 📄 Código do Projeto
+## Código do Projeto
 
 O código completo está disponível em:
 
@@ -71,7 +71,7 @@ Ele realiza:
 
 ---
 
-## 🧪 Simulação (Wokwi)
+## Simulação (Wokwi)
 
 O repositório inclui:
 
