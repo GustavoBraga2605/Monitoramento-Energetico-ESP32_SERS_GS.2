@@ -76,14 +76,14 @@ Ele realiza:
 O repositório inclui:
 
 `/simulacao/serial_monitor`
+`/simulacao/diagram.json`
 
 Para executar:
 
-1. Acesse **https://wokwi.com**  
-2. Clique em **Import Project**  
-3. Selecione `diagram.json`  
-4. Cole o código na aba do ESP32  
-5. Execute e observe os LEDs + Serial Monitor
+1. Acesse **[https://wokwi.com](https://wokwi.com/projects/447902999310216193)**;  
+2. Entre no projeto e execute-o, clicando no botão verde na simulação;
+3. Com o projeto executado, altere a taxa de luminosidade dentro do LDR;
+4. Observe a resposta dos LEDs e sua descrição no Serial Monitor.
 
 ---
 
